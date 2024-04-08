@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('pull') {
+            steps {
+                echo 'pull done'
+            }
+        }
+    }s
+     
+     stages {
+        stage('Build') {
+            steps {
+                echo 'Build Done'
+            }
+        }
+    }
+
+    stages {
+        stage('Quality test') {
+            steps {
+                echo 'Quality check Done'
+            }
+        }
+    }
+     
+    stages {
+        stage('Deploy') {
+            steps {
+                echo 'Deploy Done'
+            }
+        }
+    }
+}
+    
+    
+
